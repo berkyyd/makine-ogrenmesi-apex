@@ -57,4 +57,4 @@ pip install -r requirements.txt
 
 ## Sonuçlar
 
-Notebook içinde her adım **1 / 1.1 / 1.1.1** formatında ilerler ve her grafik için “neden var / ne gösteriyor / ne anlama geliyor / sonraki adım” yorumları eklenir.
+Notebook içinde akış **2.x → 3.x → 4.x → 5.1 → 5.2** şeklinde ilerler ve her grafik için “neden var / ne gösteriyor / ne anlama geliyor / sonraki adım” mikro-yorumları eklenir.
