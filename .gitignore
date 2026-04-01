@@ -5,5 +5,4 @@ __pycache__/
 # Generated artifacts
 figures/*.html
 models/*.pkl
-data/raw/*.csv
 data/processed/*.csv

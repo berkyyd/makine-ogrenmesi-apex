@@ -9,3 +9,6 @@ scipy>=1.11.0
 nbformat>=5.9.0
 nbconvert>=7.10.0
 statsmodels>=0.14.0
+xgboost
+lightgbm
+anywidget>=0.9.0

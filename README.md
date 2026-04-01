@@ -29,8 +29,10 @@ apex/
 ├── figures/
 ├── models/
 ├── notebooks/
-│   └── 01_student_performance_crispdm_plotly.ipynb
-├── dataset/                      # (mevcut) eski çıktıların durduğu yer
+│   ├── student_performance_final.ipynb
+│   ├── ikinci-versiyon.ipynb
+│   └── ilk-yapilan.ipynb
+├── tools/                        # Notebook hücrelerini otomatik güncelleyen scriptler
 ├── requirements.txt
 └── README.md
 ```
@@ -45,7 +47,7 @@ pip install -r requirements.txt
 
 ## Çalıştırma
 
-- Notebook: `notebooks/01_student_performance_crispdm_plotly.ipynb`
+- Notebook (final): `notebooks/student_performance_final.ipynb`
 - Notebook çalıştıkça şu çıktılar oluşur:
   - `data/raw/student_performance_raw.csv`
   - `data/processed/student_performance_cleaned.csv`
