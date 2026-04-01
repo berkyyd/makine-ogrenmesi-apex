@@ -73,7 +73,6 @@ def make_card(fig, title: str, bullets: list[str]):
 
     fw = go.FigureWidget(fig)
     fw.layout.height = 340
-    fw.layout.width = "100%"
     fw.layout.margin = dict(l=14, r=14, t=56, b=44)
 
     li = "".join(f"<li style='margin:6px 0; color:{THEME['text']};'>{b}</li>" for b in bullets)
