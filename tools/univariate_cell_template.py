@@ -136,14 +136,14 @@ NUM_TEXT = {
     "attendance_rate": [
         "Devam oranı değerleri büyük ölçüde 80–95 bandında toplanıyor; en yoğun bölge 85–92 civarında.",
         "Dağılım genel olarak dengeli; çok düşük devam oranları az, çoğunluk orta-yüksek devam seviyesinde.",
-        "Alt uçta ~75, üst uçta 100’e yakın az sayıda değer var; bunlar ana kitleden ayrışan istisnalar gibi duruyor.",
-        "Genel tablo, devamın veri içinde yüksek ve tutarlı bir davranış olduğunu düşündürüyor.",
+        "0–100 dışına taşan değerler (varsa) fiziksel/mantıksal olarak tutarsız kabul edilmelidir; bu durum Adım 3’te “hata→NaN→akıllı imputation” akışında ele alınır.",
+        "Genel tablo, devamın veri içinde yüksek ve tutarlı bir davranış olduğunu düşündürüyor; tanı aşamasında uç noktalar ayrıca sayılmalıdır.",
     ],
     "sleep_hours": [
         "Uyku saatlerinin büyük kısmı gerçekçi aralıkta (yaklaşık 6–12 saat) yoğunlaşıyor; çoğunluğun uyku düzeni bu bantta.",
-        "Buna rağmen çok aşırı yüksek (100+ gibi) az sayıda değer net biçimde ayrışıyor; bu durum çoğu zaman kayıt/format hatası ihtimalini güçlendirir.",
-        "Bu uç değerler ölçeği “çektiği” için ana kitlenin dağılımı daha sıkışık görünür; yani grafiğin görünümü uçlardan belirgin biçimde etkileniyor.",
-        "Genel çıkarım: Uyku değişkeninde çoğunluk normal, fakat veri içinde bariz anomaliler de var.",
+        "2’nin altı veya 24’ün üstü gibi değerler fiziksel olarak imkansız kabul edilir; bu tür değerler Adım 3’te önce NaN’a çevrilip sonra akıllı imputation ile tamamlanır.",
+        "Bu uç değerler ölçeği “çektiği” için ana kitlenin dağılımı daha sıkışık görünür; bu yüzden tanı aşamasında imkansız değer sayımı ayrıca raporlanmalıdır.",
+        "Genel çıkarım: Uyku değişkeninde çoğunluk normal; küçük bir anomali kümesi veri temizleme ihtiyacını netleştiriyor.",
     ],
     "internet_usage_time": [
         "İnternet kullanım süresi değerleri ağırlıkla 6–9 saat/gün bandında toplanıyor; en yoğun bölge 7–9 civarında görünüyor.",
@@ -160,8 +160,8 @@ NUM_TEXT = {
     "distance_to_school": [
         "Okula uzaklık değerleri genel olarak geniş bir aralığa yayılmış; gözlemler büyük ölçüde 0–40 km bandını dolduruyor ve belirgin bir “tek noktada yığılma” çok güçlü görünmüyor.",
         "Medyanın ~20 km civarında olması, tipik öğrencinin okula orta mesafeden geldiğini düşündürüyor; kutu grafiği de ana kitlenin bu orta bandın etrafında toplandığını ima ediyor.",
-        "Grafikte negatif uzaklık (≈ -5 km) gibi gerçek hayatta anlamsız bir değer görülüyor; bu, değişkende az sayıda da olsa kayıt/işaret hatası olabileceğini gösteriyor.",
-        "Genel resim, uzaklık değişkeninin öğrenciler arasında çeşitlilik barındırdığını; ancak küçük sayıdaki tutarsız değerin veride “temizlik gerektiren” bir sinyal verdiğini anlatıyor.",
+        "Negatif uzaklık gibi değerler fiziksel olarak anlamsızdır; bu durum veri hatası kabul edilip Adım 3’te NaN havuzuna alınarak akıllı imputation ile düzeltilir.",
+        "Genel resim, uzaklık değişkeninin çeşitlilik barındırdığını; küçük sayıdaki tutarsız değerin ise temizleme ihtiyacını gösterdiğini anlatıyor.",
     ],
     "stress_level": [
         "Stres düzeyi değerleri çoğunlukla 2–4 bandında toplanıyor; en yoğun bölge ~3 civarı ve tipik öğrencinin stres seviyesi bu orta aralıkta görünüyor.",
