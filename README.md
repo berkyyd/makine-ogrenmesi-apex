@@ -17,6 +17,8 @@ flowchart TD
   B --> J[data/raw/*.csv]
 ```
 
+
+
 ## Klasör Yapısı
 
 ```
@@ -55,6 +57,3 @@ pip install -r requirements.txt
   - `figures/NN_*.html`
   - `models/best_model.pkl`
 
-## Sonuçlar
-
-Notebook içinde akış **2.x → 3.x → 4.x → 5.1 → 5.2** şeklinde ilerler ve her grafik için “neden var / ne gösteriyor / ne anlama geliyor / sonraki adım” mikro-yorumları eklenir.
